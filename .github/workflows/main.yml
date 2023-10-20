@@ -2,7 +2,7 @@ name: Python Scheduled Script
 
 on: 
   schedule:
-  - cron: "* * * * *"
+  - cron: "0 0 * * *"
 
   workflow_dispatch:
 
@@ -34,7 +34,7 @@ jobs:
 
       - name: Commit files
         run: |
-          git config --local user.name Piketulus
+          git config --local user.name JesseHantula
           git config --local user.email "joel.pietilainen@gmail.com"
           git add --all
           git commit -am "GH ACTION Healines $(date)"
