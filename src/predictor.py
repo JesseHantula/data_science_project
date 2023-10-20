@@ -54,7 +54,7 @@ def get_predictions(models_path='./data/models.pkl', avgs_path='./data/last_3_ye
     return predictions
 
 
-def get_predictions_as_words(models_path='./data/models.pkl', avgs_path='./data/last_3_year_averages.csv'):
+def get_predictions_as_words(models_path='./data/models.pkl', avgs_path='./data/last_3_year_averages.csv', save_path='./data/predictions.csv'):
     predictions = get_predictions(models_path, avgs_path)
     stationavgs = pd.read_csv(avgs_path)
 
@@ -96,6 +96,6 @@ def get_predictions_as_words(models_path='./data/models.pkl', avgs_path='./data/
         #add row temp to new_predictions
         new_predictions.loc[len(new_predictions)] = temp
 
-    new_predictions.to_csv('../data/predictions.csv', index=False)
+    new_predictions.to_csv(save_path, index=False)
     
     return new_predictions
