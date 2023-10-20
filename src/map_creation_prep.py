@@ -25,6 +25,7 @@ def get_prediction_coordinates():
     predictions = predictions.drop(columns="Nimi")
 
     #Replace predictions with f string of Station name NEW LINE Date: Busyness NEW LINE ...
+    # drop Station column
 
     predictions.to_csv('./data/predictions_with_coordinates.csv', index=False)
 
