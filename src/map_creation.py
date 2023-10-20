@@ -7,7 +7,7 @@ def create_map():
 
     data = get_prediction_coordinates()
 
-    m = folium.Map(location=[60,25], tiles="OpenStreetMap", zoom_start=8)
+    m = folium.Map(location=[60.211,24.947], tiles="OpenStreetMap", zoom_start=11.5)
 
     # add marker one by one on the map
     for i in range(0,len(data)):
