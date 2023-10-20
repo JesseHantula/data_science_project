@@ -81,15 +81,15 @@ def get_predictions_as_words(models_path='./data/models.pkl', avgs_path='./data/
 
         for i in range(5):
             if busy_values[i] < 0.4:
-                busy_values[i] = "Quiet"
-            elif busy_values[i] < 0.8:
                 busy_values[i] = "Not Busy"
+            elif busy_values[i] < 0.8:
+                busy_values[i] = "Moderately Busy"
             elif busy_values[i] < 1.2:
-                busy_values[i] = "Average"
+                busy_values[i] = "Quite Busy"
             elif busy_values[i] < 1.6:
-                busy_values[i] = "Busy"
-            else:
                 busy_values[i] = "Very Busy"
+            else:
+                busy_values[i] = "Extremely Busy"
 
 
         temp = {'Station': index, 'Predicted Busyness': busy_values}
