@@ -1,4 +1,4 @@
-from predictor import get_predictions_as_words
+from map_creation import create_map
 
 
-get_predictions_as_words()
+create_map()

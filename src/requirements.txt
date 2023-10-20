@@ -1,0 +1,5 @@
+fmiopendata==0.4.2
+folium==0.14.0
+numpy==1.26.0
+pandas==2.1.1
+scikit-learn==1.3.0
