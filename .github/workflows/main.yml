@@ -42,7 +42,7 @@ jobs:
           git config --local user.name JesseHantula
           git config --local user.email "jessehantula@gmail.com"
           git add --all
-          git commit -am "GH ACTION Healines $(date)"
+          git commit -am "Updated map $(date)"
           git push origin main
         env:
           REPO_KEY: ${{secrets.GITHUB_TOKEN}}
