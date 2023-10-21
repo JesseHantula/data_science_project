@@ -41,3 +41,11 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+
+defaults:
+  - scope:
+      path: ""
+      type: "page"
+    values:
+      layout: null
+      permalink: /map.html
