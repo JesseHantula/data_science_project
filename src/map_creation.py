@@ -17,4 +17,4 @@ def create_map():
         ).add_to(m)
 
     # Save it as html
-    m.save('./map.html')
+    m.save('./index.html')
