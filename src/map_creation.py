@@ -1,4 +1,3 @@
-#https://python-graph-gallery.com/312-add-markers-on-folium-map/
 import folium
 from map_creation_prep import get_prediction_coordinates
 
@@ -8,6 +7,14 @@ def create_map():
     data = get_prediction_coordinates()
 
     m = folium.Map(location=[60.211,24.947], tiles="OpenStreetMap", zoom_start=11.5)
+
+    #add title to map
+    title = '''
+             <h1 align="center" style="font-size:30px"><b>HSL Bike Planner</b></h1>
+             <h4 align ="center" style="font-size:15px"><b>Find your city bike station on the map and click on the pin to see how busy it will be during the next 5 days</b></h4>
+             <h4 align ="center" style="font-size:15px"><b>Busy-ness scale: <font color=#006400>Not Busy</font>, <font color=#FFD800>Moderately Busy</font>, <font color=#F28500>Quite Busy</font>, <font color=#FF0000>Very Busy</font>, <font color=#451425>Extremely Busy</font></b></h4>
+             '''
+    m.get_root().html.add_child(folium.Element(title))
 
     # add marker one by one on the map
     for i in range(0,len(data)):
