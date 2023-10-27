@@ -14,3 +14,4 @@ This repository contains the following sections:
 Below we have the link to our website, where you will find an interactive map of the Helsinki/Espoo region. The map contains a pin for each HSL bike station, where, by clicking on a pin, will show the predicted busyness of the station for the next 5 days.
 
 Link to website: https://jessehantula.github.io/data_science_project.github.io/
+*Disclaimer: This website can be used only during the city bike season from April to October, and exceptionally during November 2023 for course grading purposes.*
