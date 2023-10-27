@@ -9,7 +9,7 @@ from sklearn.metrics import mean_squared_error
 def fit_models(data_path = './data/finalized_data.csv', save_path = './data/models.pkl'):
     df = pd.read_csv(data_path)
 
-    #We use only data from 2019 onwards for better accuracy
+    #We use only data from 2019 onwards in order to benefit from our 'Last 3 year avg' features
     df = df[df['Year'] > 2]
 
     #get a list of all unique stations in the dataset from year 2021 (latest year)
