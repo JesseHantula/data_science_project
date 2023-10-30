@@ -9,7 +9,7 @@ This repository contains the following sections:
 2. notebooks - contains the notebooks that were used for data collection and cleaning, as well as the notebook used for visualizing the data.
 3. src - contains the code for the machine learning model and its predictions, as well as the code for the creation of the map for our website.
 4. The code for the website.
-5. The final HSL bike planner report.
+5. The final [HSL bike planner report](https://github.com/JesseHantula/data_science_project.github.io/blob/main/Technical_Report.pdf)
 
 Below we have the link to our website, where you will find an interactive map of the Helsinki/Espoo region. The map contains a pin for each HSL bike station, where, by clicking on a pin, will show the predicted busyness of the station for the next 5 days.
 
